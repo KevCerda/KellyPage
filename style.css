@@ -112,6 +112,7 @@ h4
 
 .dibujos
 {
+    text-align: center;
     display: flexbox;
     justify-content: center;
     flex-flow: row wrap;
