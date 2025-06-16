@@ -110,11 +110,15 @@ h4
     transform: translateY(-3px);
 }
 
+.dibujosContainer
+{
+    justify-content: right;
+}
+
 .dibujos
 {
-    text-align: center;
     display: flexbox;
-    justify-content: center;
+    text-align: center;
     flex-flow: row wrap;
 }
 
