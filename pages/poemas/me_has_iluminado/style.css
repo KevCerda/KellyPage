@@ -1,0 +1,147 @@
+@font-face {
+    font-family: titles;
+    src: url(../../../fonts/Great_Vibes/GreatVibes-Regular.ttf);
+}
+@font-face {
+    font-family: subtitles;
+    src: url(../../../fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf);
+}
+@font-face {
+    font-family: parraf;
+    src: url(../../../fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: cartas;
+    src: url(../../../fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
+}
+
+*
+{
+    font-family: parraf;
+    margin: 0;
+}
+
+body
+{
+    background: linear-gradient(135deg, #FFE5B4 0%, #FFDAB9 50%, #FFE4E1 100%);
+    min-height: 100vh;
+}
+
+header
+{
+    margin: 25px 35% 30px 35%;
+}
+
+h1
+{
+    font-family: titles;
+    text-align: center;
+    font-size: 80px;
+    margin: 0 0 -15px 0;
+    color: #FF6B35; 
+    text-shadow: 2px 2px 4px rgba(255, 107, 53, 0.3);
+}
+
+h2
+{
+    font-family: subtitles;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    color: #E67E22;
+    text-shadow: 1px 1px 2px rgba(230, 126, 34, 0.2);
+}
+
+.contenedorGeneral
+{
+    display: flex;
+    justify-content: center;
+}
+
+.carta
+{
+    width: 25%;
+    padding: 40px 20px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #FFF8DC 0%, #FFEFD5 100%);
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.25);
+    border: 2px solid rgba(255, 165, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.carta p
+{
+    text-align: center;
+    margin: 0 0 10px 0;
+    color: #8B4513;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.boton
+{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+}
+
+.boton a
+{
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    width: 27%;
+    padding: 12px 20px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #FF8C42 0%, #FF6B35 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+    transition: all 0.5s ease;
+    border: none;
+}
+.boton a:hover
+{
+    background: linear-gradient(135deg, #FF6B35 0%, #E67E22 100%);
+    color: #ffffff;
+    box-shadow: 0 6px 20px rgba(230, 126, 34, 0.5);
+    transform: translateY(-3px);
+}
+
+@media screen and (max-width: 800px) 
+{
+
+    header
+    {
+        margin: 30px 10%;
+    }
+
+    h1
+    {
+        font-size: 50px;
+    }
+
+    h2
+    {
+        font-size: 20px;
+    }
+
+    .carta
+    {
+        width: 80%;
+    }
+    .boton a
+    {
+        width: 80%;
+    }
+}
