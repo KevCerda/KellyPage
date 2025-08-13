@@ -23,13 +23,14 @@
 
 body
 {
-    background: linear-gradient(135deg, #FFE5B4 0%, #FFDAB9 50%, #FFE4E1 100%);
+    background: linear-gradient(135deg, #f8e1ff 0%, #e8b4f8 25%, #d4a5f5 50%, #c084fc 75%, #a855f7 100%);
     min-height: 100vh;
+    background-attachment: fixed;
 }
 
 header
 {
-    margin: 25px 35% 30px 35%;
+    margin: 25px 30% 30px 30%;
 }
 
 h1
@@ -38,8 +39,11 @@ h1
     text-align: center;
     font-size: 80px;
     margin: 0 0 -15px 0;
-    color: #FF6B35; 
-    text-shadow: 2px 2px 4px rgba(255, 107, 53, 0.3);
+    background: linear-gradient(-45deg, #7c3aed, #a855f7, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 2px 2px 4px rgba(124, 58, 237, 0.1);
 }
 
 h2
@@ -48,8 +52,7 @@ h2
     text-align: center;
     font-size: 20px;
     margin: 0 0 20px 0;
-    color: #E67E22;
-    text-shadow: 1px 1px 2px rgba(230, 126, 34, 0.2);
+    color: #5c0a3a;
 }
 
 .contenedorGeneral
@@ -60,12 +63,14 @@ h2
 
 .carta
 {
-    width: 25%;
-    padding: 40px 20px;
-    border-radius: 15px;
-    background: linear-gradient(145deg, #FFF8DC 0%, #FFEFD5 100%);
-    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.25);
-    border: 2px solid rgba(255, 165, 0, 0.1);
+    width: 40%;
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #ffffff 0%, #f2e5ff 50%, #d5abff 100%);
+    box-shadow: 0 10px 30px rgba(124, 58, 237, 0.15), 
+                0 4px 15px rgba(168, 85, 247, 0.1);
+    border: 1px solid rgba(168, 85, 247, 0.1);
+    backdrop-filter: blur(10px);
     animation: fadeInUp 1s ease-out;
 }
 
@@ -82,11 +87,8 @@ h2
 
 .carta p
 {
-    text-align: center;
-    margin: 0 0 10px 0;
-    color: #8B4513;
-    line-height: 1.6;
-    font-size: 16px;
+    text-align: justify;
+    margin: 0 0 25px 0;
 }
 
 .boton
@@ -101,21 +103,26 @@ h2
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    width: 27%;
-    padding: 12px 20px;
-    border-radius: 15px;
-    background: linear-gradient(135deg, #FF8C42 0%, #FF6B35 100%);
+    width: 30%;
+    padding: 15px 25px;
+    margin: 12px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #c084fc 100%);
     color: #ffffff;
-    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
-    transition: all 0.5s ease;
+    box-shadow: 0 8px 25px rgba(124, 58, 237, 0.3), 
+                0 4px 10px rgba(168, 85, 247, 0.2);
+    transition: all 0.4s ease;
     border: none;
+    position: relative;
+    overflow: hidden;
 }
 .boton a:hover
 {
-    background: linear-gradient(135deg, #FF6B35 0%, #E67E22 100%);
+    background: linear-gradient(135deg, #6d28d9 0%, #9333ea 50%, #a855f7 100%);
     color: #ffffff;
-    box-shadow: 0 6px 20px rgba(230, 126, 34, 0.5);
-    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(124, 58, 237, 0.4), 
+                0 6px 15px rgba(168, 85, 247, 0.3);
+    transform: translateY(-4px) scale(1.02);
 }
 
 @media screen and (max-width: 800px) 
