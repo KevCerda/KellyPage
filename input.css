@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import 'tailwindcss';
+
+@theme
+{
+    --font-loved: "Great Vibes", cursive;
+    --w-9/1: --spacing: 
+}
