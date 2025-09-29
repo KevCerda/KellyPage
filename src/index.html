@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositorio para mi amor</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-linear-180 from-rose-100 to-red-200 min-h-screen">
+    <dialog id="modal" class="bg-transparent">
+        <div class="fixed inset-0 flex justify-center items-center w-full h-full backdrop-blur-lg backdrop-brightness-50">
+            <div class="flex flex-col justify-center items-center lg:w-1/2 w-[90%] h-max p-6 bg-white rounded-xl shadow gap-4">
+                <img id="selected-image" class="w-full rounded-lg shadow-md" src="resources/image/draws/3_TeAmoMucho.png" alt="">
+                <div class="w-full flex justify-center items-center gap-4 flex-col lg:flex-row">
+                    <a id="download-button" class="flex-1 flex justify-center items-center lg:w-max w-full gap-2 p-4 bg-rose-400 rounded-lg shadow-md text-white font-medium transition-colors duration-200 ease-in-out hover:bg-rose-600">
+                        Descargar imagen
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>
+                    </a>
+                    <button id="close-dialog-button" class="flex-1 flex justify-center items-center lg:w-max w-full gap-2 p-4 bg-rose-400 rounded-lg shadow-md text-white font-medium transition-colors duration-200 ease-in-out hover:bg-rose-600">
+                        Cerrar imagen
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <div class="flex flex-col justify-center items-center">
+        <header class="flex flex-col justify-center items-center w-[90%] sm:w-4/5 bg-white rounded-xl shadow py-8 my-8">
+            <h1 class="font-black font-loved lg:text-7xl text-5xl text-rose-500">Bienvenida, mi amor</h1>
+            <h2 class="font-serif lg:text-xl text-center text-xs text-rose-700">Una página hecha con muchísimo amor, para mi niña, Kelly</h2>
+        </header>
+        <nav class="flex justify-center items-center w-[90%] sm:w-4/5 bg-linear-120 from-white to-rose-50 py-4 rounded-xl gap-8 shadow">
+            <a class="text-xs md:text-md px-4 py-2 flex justify-center items-center gap-2 w-max bg-rose-400 text-white font-medium rounded-lg transition-colors duration-200 hover:bg-rose-500" href="#cartas">
+                <svg class="md:size-6 size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mails-icon lucide-mails"><path d="M17 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 1-1.732"/><path d="m22 5.5-6.419 4.179a2 2 0 0 1-2.162 0L7 5.5"/><rect x="7" y="3" width="15" height="12" rx="2"/></svg>
+                Cartas
+            </a>
+            <a class="text-xs md:text-md px-4 py-2 flex justify-center items-center gap-2 w-max bg-rose-400 text-white font-medium rounded-lg transition-colors duration-200 hover:bg-rose-500" href="#poemas">
+                <svg class="md:size-6 size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-badge-icon lucide-file-badge"><path d="M12 22h6a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3.072"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m6.69 16.479 1.29 4.88a.5.5 0 0 1-.698.591l-1.843-.849a1 1 0 0 0-.88.001l-1.846.85a.5.5 0 0 1-.693-.593l1.29-4.88"/><circle cx="5" cy="14" r="3"/></svg>
+                Poemas
+            </a>
+            <a class="text-xs md:text-md px-4 py-2 flex justify-center items-center gap-2 w-max bg-rose-400 text-white font-medium rounded-lg transition-colors duration-200 hover:bg-rose-500" href="#multimedia">
+                <svg xmlns="http://www.w3.org/2000/svg" class="md:size-6 size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image-play-icon lucide-image-play"><path d="M15 15.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997a1 1 0 0 1-1.517-.86z"/><path d="M21 12.17V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6"/><path d="m6 21 5-5"/><circle cx="9" cy="9" r="2"/></svg>
+                Multimedia
+            </a>
+        </nav>
+        <section class="flex flex-col justify-center items-center w-[90%] sm:w-4/5 bg-linear-120 from-white to-rose-50 rounded-xl gap-10 shadow my-8 p-10">
+            <div class="w-full bg-neutral-50 p-2 rounded-lg shadow">
+                <p class="md:text-lg text-sm text-center"><span class="text-rose-600 font-medium">Hola, mi amor</span>. Esta página la hago con muchísimo amor y cariño, es un pequeñito detalle que me permite estár ahí siempre, cuando lo necesites. Cada cartita, cada poema y cada pequeño detallito que hay en esta página es para ti; demuestran lo mucho que te amo y lo mucho que tengo para entregarte, siendo esto el escalón más bajo de una gran piramide. <span class="font-bold text-rose-500">Te amo muchísimo mi amor. <3</span></p>
+            </div>
+            <div class="w-full flex flex-col gap-2">
+                <img class="w-full shadow rounded-2xl" src="resources/image/hero-image.jpg" alt="my love">
+                <p class="italic font-medium md:text-base text-xs">Sigamos teniendo grandes momentos, mi amor</p>
+            </div>
+            <div id="cartas" class="w-full h-max flex gap-6 flex-col flex-wrap justify-center items-center">
+                <h3 class="font-bold font-serif md:text-3xl text-2xl text-rose-600">Cartas</h3>
+                <div class="buttons-container flex justify-center items-center gap-4 flex-wrap">
+                    <a class="md:w-max w-full text-center h-max px-4 py-2 bg-rose-300 text-white font-medium rounded-lg md:text-lg text-sm shadow transition-all duration-200 ease-in hover:bg-rose-500 hover:cursor-pointer" href="#">Tú, mi todo</a>
+                    <a class="md:w-max w-full text-center h-max px-4 py-2 bg-rose-300 text-white font-medium rounded-lg md:text-lg text-sm shadow transition-all duration-200 ease-in hover:bg-rose-500 hover:cursor-pointer" href="#">14 de Febrero</a>
+                    <a class="md:w-max w-full text-center h-max px-4 py-2 bg-rose-300 text-white font-medium rounded-lg md:text-lg text-sm shadow transition-all duration-200 ease-in hover:bg-rose-500 hover:cursor-pointer" href="#">60 días</a>
+                    <a class="md:w-max w-full text-center h-max px-4 py-2 bg-rose-300 text-white font-medium rounded-lg md:text-lg text-sm shadow transition-all duration-200 ease-in hover:bg-rose-500 hover:cursor-pointer" href="#">Ciento ochenta</a>
+                </div>
+            </div>
+            <div class="w-full h-1 rounded-full bg-rose-300"></div>
+            <div id="poemas" class="w-full h-max flex gap-6 flex-col flex-wrap justify-center items-center">
+                <h3 class="font-bold font-serif md:text-3xl text-2xl text-rose-600">Poemas</h3>
+                <div class="buttons-container w-full flex justify-center items-center gap-4 flex-wrap">
+                    <a class="md:w-max w-full text-center h-max px-4 py-2 bg-rose-300 text-white font-medium rounded-lg md:text-lg text-sm shadow transition-all duration-200 ease-in hover:bg-rose-500 hover:cursor-pointer" href="#">Mi princesa</a>
+                    <a class="md:w-max w-full text-center h-max px-4 py-2 bg-rose-300 text-white font-medium rounded-lg md:text-lg text-sm shadow transition-all duration-200 ease-in hover:bg-rose-500 hover:cursor-pointer" href="#">Me has iluminado</a>
+                </div>
+            </div>
+            <div class="w-full h-1 rounded-full bg-rose-300"></div>
+            <div id="multimedia" class="w-full h-max flex gap-6 flex-col flex-wrap justify-center items-center">
+                <h3 class="font-bold font-serif md:text-3xl text-2xl text-rose-600">Dibujos</h3>
+                <div class="images-container w-full flex justify-center items-center gap-6 flex-wrap">
+                    <img class="lg:w-96 w-full rounded-lg shadow transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer" src="resources/image/draws/1_Kelly_y_Kevin.png" alt="">
+                    <img class="lg:w-96 w-full rounded-lg shadow transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer" src="resources/image/draws/2_Te_amo_Kelly.png" alt="">
+                    <img class="lg:w-96 w-full rounded-lg shadow transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer" src="resources/image/draws/3_TeAmoMucho.png" alt="">
+                    <img class="lg:w-96 w-full rounded-lg shadow transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer" src="resources/image/draws/4_Dino.png" alt="">
+                    <img class="lg:w-96 w-full rounded-lg shadow transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer" src="resources/image/draws/5_Dinonovios.png" alt="">
+                    <img class="lg:w-96 w-full rounded-lg shadow transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer" src="resources/image/draws/6_MiAmor.png" alt="">
+                    <img class="lg:w-96 w-full rounded-lg shadow transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer" src="resources/image/draws/7_TeAmoPatodaMiVida.png" alt="">
+                </div>
+                <h3 class="font-bold font-serif md:text-3xl text-2xl text-rose-600 mt-8">Momentos</h3>
+                <div class="images-container flex justify-center items-center gap-6 flex-wrap">
+                    <img class="lg:w-96 w-full rounded-lg shadow transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer" src="resources/image/moments/1_moment.png" alt="">
+                    <img class="lg:w-96 w-full rounded-lg shadow transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer" src="resources/image/moments/2_moment.png" alt="">
+                    <img class="lg:w-96 w-full rounded-lg shadow transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer" src="resources/image/moments/3_moment.png" alt="">
+                    <img class="lg:w-96 w-full rounded-lg shadow transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer" src="resources/image/moments/4_moment.png" alt="">
+                    <img class="lg:w-96 w-full rounded-lg shadow transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer" src="resources/image/moments/5_moment.png" alt="">
+                    <img class="lg:w-96 w-full rounded-lg shadow transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer" src="resources/image/moments/6_moment.png" alt="">
+                    <img class="lg:w-96 w-full rounded-lg shadow transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer" src="resources/image/moments/7_moment.png" alt="">
+                    <img class="lg:w-96 w-full rounded-lg shadow transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-lg hover:cursor-pointer" src="resources/image/moments/8_moment.png" alt="">
+                </div>
+                <div class="w-full h-1 rounded-full bg-rose-300 my-6"></div>
+                <a title="Descargar imagen" class="w-full" target="_blank" href="resources/image/polaroid.png"><img class="w-full shadow rounded-2xl border-0 border-rose-500 transition-all duration-200 delay-100 ease-in-out hover:border-4" src="resources/image/polaroid.png" alt=""></a>
+            </div>
+        </section>
+    </div>
+    <script src="scripts/rotate_buttons.js" defer></script>
+    <script src="scripts/image_modal.js" defer></script>
+</body>
+</html>
